@@ -1,5 +1,5 @@
 from kivy.app import App
-from kivy.ui.widget import Widget
+from kivy.uix.widget import Widget
 
 class MainWidget(Widget):
     pass
