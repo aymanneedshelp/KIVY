@@ -1,13 +1,33 @@
-MainBoxLayout:
-
-<MainBoxLayout>:
-    Button:
-        text: "Hello"
-        pos_hint: {'top':1}
-        size_hint: (.1, .1)
+MainStackLayout:
 
 
-    Button:
-        text: "Hi there"
-        pos_hint: {'top':1}
-        size_hint: (.1, .5)
+
+<MainStackLayout>:
+    
+    BoxLayout:
+        Button:
+            text: "A"
+            size_hint: .1,1
+
+        Button:
+            text:"B"
+            size_hint:.3,1
+        
+        PageLayout:
+            size_hint:.3,1
+
+            GridLayout:
+                cols: 2
+                Label:
+                    text: "Page"
+                Label:
+                    text: "One"
+            
+            AnchorLayout:
+                Label:
+                    text: "Page2"
+
+
+        Button:
+            text:"D"
+            size_hint:.3,1
